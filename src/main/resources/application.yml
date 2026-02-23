@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nexbank_auth
+    username: postgres
+    password: db123
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+security:
+  jwt:
+    secret: dGhpc2lzYXNlY3VyZTI1NnNlY3JldGtleWZvcmRlbW9wdXJwb3Nl
+    expiration: 900000
